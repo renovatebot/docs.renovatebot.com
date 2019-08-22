@@ -50,17 +50,17 @@ pages:
     - 'Semantic Commit Messages': 'semantic-commits.md'
     - 'Noise Reduction': 'noise-reduction.md'
   - Config Presets:
-    - "Full Config Presets": "presets-config.md"
-    - "Default Presets": "presets-default.md"
-    - "Docker Presets": "presets-docker.md"
-    - "Group Presets": "presets-group.md"
-    - "Helper Presets": "presets-helpers.md"
-    - "JS Presets": "presets-js.md"
-    - "Meteor Presets": "presets-meteor.md"
-    - "Monorepo Presets": "presets-monorepo.md"
-    - "Package Presets": "presets-packages.md"
-    - "Preview Presets": "presets-preview.md"
-    - "Schedule Presets": "presets-schedule.md"
+    - "Full Config Presets": "/presets-config.md"
+    - "Default Presets": "/presets-default.md"
+    - "Docker Presets": "/presets-docker.md"
+    - "Group Presets": "/presets-group.md"
+    - "Helper Presets": "/presets-helpers.md"
+    - "JS Presets": "/presets-js.md"
+    - "Meteor Presets": "/presets-meteor.md"
+    - "Monorepo Presets": "/presets-monorepo.md"
+    - "Package Presets": "/presets-packages.md"
+    - "Preview Presets": "/presets-preview.md"
+    - "Schedule Presets": "/presets-schedule.md"
   - Renovate Pro:
     - 'Overview': 'pro/overview.md'
     - 'Configuration (GitHub)': 'pro/configuration-github.md'
