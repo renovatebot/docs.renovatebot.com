@@ -35,9 +35,7 @@ async function generatePresets() {
       .replace(/^Config$/, 'Full Config');
     const description = pj.description;
     const frontMatter = generateFrontMatter(formattedName, description, index);
-    let content = `\n${description}. [Source repository](https://github.com/singapore/renovate-config/tree/master/packages/${
-      pj.name
-    })\n`;
+    let content = `\n${description}. [Source repository](https://github.com/renovatebot/renovate-config/tree/master/packages/${pj.name})\n`;
     for (const [preset, value] of Object.entries(pj['renovate-config'])) {
       let header = `\n### ${name === 'default' ? '' : name}:${preset}`;
       let presetDescription = value.description;
