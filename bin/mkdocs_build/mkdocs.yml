@@ -22,9 +22,8 @@ markdown_extensions:
 
 # Page Tree
 pages:
-  - '/index'
   - Getting Started:
-      - 'GitHub App Installation': '/install-github-app'
+      - 'GitHub App Installation': '/install-github-app.md'
       - 'GitLab App Installation': '/install-gitlab-app'
       - 'Configure Renovate (Onboarding PR)': '/configure-renovate'
       - 'Private npm module support': '/private-modules'
