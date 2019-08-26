@@ -10,6 +10,9 @@ cd tmp
 rm -rf renovate
 git clone --depth=1 https://github.com/renovatebot/renovate
 cd renovate
+npm i -g yarn
+yarn install
+yarn build
 rm -rf $pwd/bin/mkdocs_build/docs
 mkdir -p $pwd/bin/mkdocs_build/docs
 cp -R website/docs/* $pwd/bin/mkdocs_build/docs
