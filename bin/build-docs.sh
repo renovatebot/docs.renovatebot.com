@@ -10,8 +10,8 @@ if [ ! -d docs ]; then
 fi
 
 cd $mkdocs_build
-cp -R $mkdocs_build/build_dep/assets/* $mkdocs_build/docs/assets
-cp -R $mkdocs_build/build_dep/index.md $mkdocs_build/docs
+cp -R $pwd/assets/* $mkdocs_build/docs/assets
+cp -R $pwd/index.md $mkdocs_build/docs
 ls -l $mkdocs_build/docs
 mkdocs build
 rm -rf $pwd/docs/*
