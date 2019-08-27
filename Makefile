@@ -18,3 +18,8 @@ build-docs:
 	bash bin/build-docs.sh
 
 build: get-docs generate-config generate-presets build-docs
+
+clean:
+	git clean -dfx
+	rm -rf build
+	rm -rf tmp
