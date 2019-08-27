@@ -3,7 +3,7 @@ default: install build
 install:
 	npm install
 	pip install --upgrade pip
-	pip install --upgrade mkdocs mkdocs-material==2.9.4
+	pip install --upgrade mkdocs mkdocs-material==3.0.6
 
 get-docs:
 	bash bin/get-docs.sh
