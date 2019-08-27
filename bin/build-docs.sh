@@ -4,6 +4,8 @@ set -e
 
 pwd=$PWD
 mkdocs_build=$pwd/bin/mkdocs_build
+mkdir -p $mkdocs_build
+cp mkdocs.yml $mkdocs_build
 cd $mkdocs_build
 if [ ! -d docs ]; then
 	source $pwd/bin/get-docs.sh
