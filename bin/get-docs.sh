@@ -4,23 +4,25 @@ set -e
 
 pwd=$PWD
 
-mkdir -p tmp
+mkdocs_build=$pwd/build
+rm -rf $mkdocs_build
+mkdir -p $mkdocs_build
 
-cd tmp
-rm -rf renovate
+tmp=$pwd/tmp
+rm -rf $tmp
+mkdir -p $tmp
+
+cd $tmp
 git clone --depth=1 https://github.com/renovatebot/renovate
 cd renovate
 npm i -g yarn
 yarn install
 yarn build
-rm -rf $pwd/bin/mkdocs_build/docs
-mkdir -p $pwd/bin/mkdocs_build/docs
-cp -R website/docs/* $pwd/bin/mkdocs_build/docs
+cp -R website/docs/* $mkdocs_build
 
-cd ../
-rm -rf pro
+cd $tmp
 git clone --depth=1 https://github.com/renovatebot/pro
 cd pro
-mkdir $pwd/bin/mkdocs_build/docs/pro
-cp -R docs/* $pwd/bin/mkdocs_build/docs/pro
-rm $pwd/bin/mkdocs_build/docs/pro/README.md
+mkdir $mkdocs_build/pro
+cp -R docs/* $mkdocs_build/pro
+rm $mkdocs_build/pro/README.md
