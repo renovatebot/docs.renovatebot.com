@@ -3,7 +3,7 @@
 set -e
 
 pwd=$PWD
-mkdocs_build=$pwd/bin/mkdocs_build
+mkdocs_build=$pwd/build
 mkdir -p $mkdocs_build
 cp mkdocs.yml $mkdocs_build
 cd $mkdocs_build

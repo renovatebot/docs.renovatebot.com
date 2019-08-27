@@ -1,4 +1,6 @@
-tmp
-node_modules
-docs
 .DS_Store
+/build
+/docs
+/node_modules
+/site
+/tmp
