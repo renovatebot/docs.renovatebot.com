@@ -9,10 +9,10 @@ get-docs:
 	bash bin/get-docs.sh
 
 generate-config:
-	bash bin/generate-config.sh
+	node bin/generate-config.js
 
 generate-presets:
-	bash bin/generate-presets.sh
+	node bin/generate-presets.js
 
 build-docs:
 	bash bin/build-docs.sh

@@ -14,7 +14,7 @@ async function generate_config(bot = false) {
   }
 
   config_options_raw = fs
-    .readFileSync(`${__dirname}/mkdocs_build/docs/${config_file}`, 'utf8')
+    .readFileSync(`${__dirname}/../build/docs/${config_file}`, 'utf8')
     .split('\n');
 
   options
@@ -41,7 +41,7 @@ async function generate_config(bot = false) {
     });
 
   fs.writeFile(
-    `${__dirname}/mkdocs_build/docs/${config_file}`,
+    `${__dirname}/../build/docs/${config_file}`,
     config_options_raw.join('\n'),
     function(err) {
       if (err) {
@@ -63,7 +63,7 @@ function gen_table(obj, type, def, bot = false) {
     'allowString',
     'cli',
     'env',
-    'admin'
+    'admin',
   ];
   // if(!bot){ ignoredKeys.push('cli', 'env') }
   obj.forEach(el => {

@@ -25,7 +25,7 @@ async function generatePresets() {
     const pj = JSON.parse(
       await fs.readFile(`tmp/renovate-config/packages/${dir}/package.json`)
     );
-    const filename = `${__dirname}/mkdocs_build/docs/presets-${dir.substring(
+    const filename = `${__dirname}/../build/docs/presets-${dir.substring(
       'renovate-config-'.length
     )}.md`;
     const name = pj.name.substring('renovate-config-'.length);
